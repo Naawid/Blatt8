@@ -58,6 +58,7 @@ public class SimpleList {
 	while (current != null) {
 		if (current.value == value) {
 			prev.next = current.next;
+			return true;
 		}
 		prev = current;
 		current = current.next;
